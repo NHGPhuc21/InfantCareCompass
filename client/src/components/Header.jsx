@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import {
   Home, User, BookOpen, Mail, Newspaper, Phone, Menu, X
 } from "lucide-react";
-import navlogo from "../assets/navlogo.jpg";
+import navlogo from "../assets/favicon.ico.png";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
