@@ -1,3 +1,15 @@
+import favicon from './assets/navlogo.png';
+
+const setFavicon = () => {
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.type = 'image/png';
+  link.href = favicon;
+  document.head.appendChild(link);
+};
+
+setFavicon();
+
 if (typeof global === 'undefined') {
     window.global = window;
 }
