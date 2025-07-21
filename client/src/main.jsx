@@ -1,6 +1,19 @@
+import favicon from './assets/favicon.ico.png';
+
+const setFavicon = () => {
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.type = 'image/png';
+  link.href = favicon;
+  document.head.appendChild(link);
+};
+
+setFavicon();
+
 if (typeof global === 'undefined') {
     window.global = window;
 }
+
 
 
 import { createRoot } from "react-dom/client";
